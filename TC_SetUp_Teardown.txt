@@ -1,0 +1,27 @@
+** Settings **
+Library                                 Selenium2Library
+
+Suite Setup                             Log         I am inside Test Suite Setup
+Suite Teardown                          Log         I am inside Test Suite Teardown
+Test Setup                              Log         I am inside Test Setup
+Test Teardown                           Log         I am inside Test Suite Teardown
+
+
+
+
+** Test Cases **
+MyFirstTest
+
+    Log                                  Hello World....
+
+
+FirstSeleniumTest
+
+    Open Browser                        https://www.google.com  chrome
+    Set Browser Implicit Wait           5
+    Input Text                          name=q                  Automation step by step
+    Press Keys                          name=q      ENTER
+
+    Sleep                               2
+    Close Browser
+    Log                                 Completed

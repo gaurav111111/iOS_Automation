@@ -1,0 +1,25 @@
+** Settings **
+Library                                       Selenium2Library
+
+** Test Cases **
+All_type_Variables
+    Log                                        variables
+
+Selenium_Variable_test
+    [Documentation]                          This is the example of all type of Variable
+    Open Browser                             ${Url}  chrome
+    Set Browser Implicit Wait                   15
+    Input Text                                  id=txtUsername                              @{Credentials}[0]
+    Set Browser Implicit Wait                   15
+    Input Password                              id=txtPassword                             &{LOGINDATA}[password]
+    Click Button                                  id=btnLogin
+   Click Element                                id=welcome
+    Click Element                                link=Logout
+    Log                                       Completed
+
+
+
+** Variables **
+${Url}                                      https://opensource-demo.orangehrmlive.com/  chrome
+@{Credentials}                              Admin       admin123
+&{LOGINDATA}                                username=admin       password=admin123
