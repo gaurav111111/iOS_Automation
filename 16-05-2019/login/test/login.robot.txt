@@ -1,0 +1,17 @@
+** Settings **
+Library                                       Selenium2Library
+Library                                        BuiltIn
+Resource                                       ../keywords/keywords.robot
+Variables                                       ../variables/variables.py
+
+** Test Cases **
+All_type_Variables
+    Log                                        variables
+
+Selenium_Variable_test
+    [Documentation]                          This is the example of all type of Variable
+
+     Open_Browser_chrome
+    LOGINKW
+    LOGOUTKW
+    Log                                       Completed

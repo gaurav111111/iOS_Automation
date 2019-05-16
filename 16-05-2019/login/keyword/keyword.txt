@@ -1,0 +1,19 @@
+** Settings **
+Library                                          Selenium2Library
+Variables                                        ../variables/variables.py
+Variables                                        ../locators/loco.robot
+
+** Keywords **
+Open_Browser_chrome
+    Open Browser                             ${URL}  chrome
+    Set Browser Implicit Wait                   15
+
+LOGINKW
+    Input Text                                 ${xpath}                             ${username}
+    Set Browser Implicit Wait                   15
+    Input Password                              id=txtPassword                        ${password}
+    Click Button                                id=btnLogin
+
+LOGOUTKW
+     Click Element                               id=welcome
+     Click Element                                link=Logout
